@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Mobbed : A computational database for MATLAB workflows." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Mobbed</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/VisLab/MobbedMatlab">View on GitHub</a>
+
+          <h1 id="project_title">Mobbed</h1>
+          <h2 id="project_tagline">A computational database for MATLAB workflows.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/VisLab/MobbedMatlab/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/VisLab/MobbedMatlab/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="mobbed-overview" class="anchor" href="#mobbed-overview"><span class="octicon octicon-link"></span></a>MOBBED overview</h3>
+
+<p>MOBBED is a lightweight, easy-to-use, extensible toolkit that allows users to incorporate a computational database into their normal MATLAB workflow. Although capable of storing quite general types of annotated data, MOBBED is particularly well-suited to  multichannel time series such as EEG that have event streams overlaid with sensor data.</p>
+
+<p>A MOBBED database can archive primary data in a central place for a single investigator or research lab to save space and avoid inconsistencies. The database infrastructure includes the ability to manage, search, and retrieve events across multiple datasets without reading in the entire dataset, as well as being able to handle more complex event patterns that include environmental and context conditions.  Systematic evaluation of algorithms and phenomena requires that primary data be subjected to a consistent preprocessing pipeline. MOBBED database allows users to store, catalog, and share the output of these pipelines. The database can also cache  expensive intermediate results so that they can be reused in such activities as cross-validation of machine learning algorithms.</p>
+
+<p>MOBBED is implemented over PostgreSQL, a widely used open source database and is freely available under the GNU general public license. </p>
+
+<h3>
+<a name="requirements-and-installation" class="anchor" href="#requirements-and-installation"><span class="octicon octicon-link"></span></a>Requirements and installation</h3>
+
+<p>The MOBBED database has been tested with MATLAB 2012a and PostgreSQL 9.2 on systems running either 64-bit Windows 7 or Ubuntu.  No other toolboxes are required. The basic installation steps are:</p>
+
+<ol>
+<li>Download and install PostgreSQL using default installation (without extra stack builder). </li>
+<li>Unzip MOBBED Matlab package where you want it to be. </li>
+<li>From within Matlab, run the setup.m script.</li>
+</ol><h3>
+<a name="resources" class="anchor" href="#resources"><span class="octicon octicon-link"></span></a>Resources</h3>
+
+<p>The MOBBED homepage is <a href="http://visual.cs.utsa.edu/mobbed">http://visual.cs.utsa.edu/mobbed</a>. The site contains additional documentation, downloadable zips for installation, and test additional test data. The source repository for the underlying Java infrastructure is available at <a href="https://github.com/VisLab/MobbedJava">https://github.com/VisLab/MobbedJava</a>. Bug reports should be submitted to the <a href="https://github.com/VisLab/MobbedMatlab/issues">Mobbed bug tracker</a></p>
+
+<h3>
+<a name="publicationsdocumentation" class="anchor" href="#publicationsdocumentation"><span class="octicon octicon-link"></span></a>Publications/Documentation</h3>
+
+<p>CS-TR-2013-005, <a href="http://venom.cs.utsa.edu/dmz/techrep/2013/CS-TR-2013-005.pdf">MOBBED (Mobile Brain-Body-Environment Decision Making) Part I: Database Design</a>, by Jeremy Cockfield, Kyung Min Su and Kay Robbins, Department of Computer Science, University of Texas at San Antonio, Apr. 2013</p>
+
+<p>CS-TR-2013-006, <a href="http://venom.cs.utsa.edu/dmz/techrep/2013/CS-TR-2013-006.pdf"> MOBBED (Mobile Brain-Body-Environment Decision Making) Part II: User Guide</a>, by Jeremy Cockfield, Kyung Min Su and Kay Robbins, Department of Computer Science, University of Texas at San Antonio, Apr. 2013</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Mobbed maintained by <a href="https://github.com/VisLab">VisLab</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-38199871-2");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
